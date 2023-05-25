@@ -10,7 +10,7 @@
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "小房子",
+    "navigationBarTitleText": "demo",
     "backgroundColor": "#fff",
     "navigationBarTextStyle":"black"
   },

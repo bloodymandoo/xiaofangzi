@@ -1,25 +1,22 @@
-<view class="userinfo">
-  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-</view>
-<!--顶部切换-->
-<view class="swiper-tab">
-  <view wx:for="{{barTitle}}" wx:key="bar" data-currenttab="{{item.currentTab}}" class="swiper-tab-list {{currentTab==item.currentTab?'on':''}}"  bindtap="swichNav">{{item.name}}</view>
-</view>
-
-<!--模版列表-->
-<view class="mobileListBorder">
-     <scroll-view scroll-y="true"  wx:if="{{items.length>0}}" style="height:400px;">
-        <view class="main">
-            <view wx:for="{{items}}" wx:key="{{itemsss}}" class="subMain">
-                <view class="subMainImage">
-                    <image src="../../image/background-down.png" class="downImage"/>
-                    <image src="../../image/background-up.png" class="upImage"/>
-                    <image class="images" bindtap="previewImage"  data-src="{{item.cover}}" src="{{item.cover}}"/>
-                    <image src="../../image/collect.png" class="collectImage" />
-                </view>
-                <view class="subMainText">{{item.title}}</view>
-            </view>
-        </view>
-    </scroll-view>
+<view class="page">
+    <view class="page__hd">
+        <!-- <view class="page__title">Cell</view>
+        <view class="page__desc">列表</view> -->
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{icon60}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">标题一</view>
+            <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+          </view>
+        </navigator>
+    </view>
+    <view class="page__bd">
+        <mp-cells wx:for="{{list}}" wx:for-item="i" wx:key="index" title="{{i.title}}" footer="{{i.footer}}">
+            <mp-cell wx:for="{{i.cells}}" wx:for-item="item" wx:key="index2" value="{{item.value}}" footer="{{item.footer}}">
+                <image slot="icon" src="{{item.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+        </mp-cells>
+       </view>
 </view>
