@@ -13,8 +13,8 @@ Page({
     gridList: generateGridList(10, 4),
     background: generateGridList(10, 4),
     indicatorDots: true,
-    vertical: false,
-    autoplay: false,
+    vertical: true,
+    autoplay: true,
     interval: 2000,
     duration: 500
   },
