@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/time/time",
+    "pages/my/my",
+    "pages/show/show",
+    "pages/logs/logs"
+  ],
+  "lazyCodeLoading": "requiredComponents",
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小房子",
+    "backgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#74777e",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/IndexOff.png",
+        "selectedIconPath": "image/IndexOn.png"
+      }, {
+        "pagePath": "pages/time/time",
+        "iconPath": "image/LikeOff.png",
+        "selectedIconPath": "image/LikeOn.png"
+      }, {
+        "pagePath": "pages/show/show",
+        "iconPath": "image/MusicOff.png",
+        "selectedIconPath": "image/MusicOn.png"
+      }, {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/MyOff.png",
+        "selectedIconPath": "image/MyOn.png"
+      }
+    ]
+  }
+}
