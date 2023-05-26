@@ -1,7 +1,19 @@
 Page({
   data: {
       inputShowed: false,
-      inputVal: ""
+      inputVal: "",
+      list:[1,2,3,4],
+      grids:[1,2,3,4],
+      yearGrids:[
+        {
+          year:'2022年',
+          image:'../../image/ex2.png'
+        },
+        {
+          year:'2021年',
+          image:'../../image/ex2.png'
+        }
+      ]
   },
   onLoad() {
       this.setData({

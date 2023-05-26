@@ -1,0 +1,25 @@
+
+<view class="card">
+  <view class="card__hd">
+    <image class="avatar" src="{{avatar}}"></image>
+    <view class="name">{{name}}
+      <view class="time">{{time}}</view>
+    </view>
+  </view>
+  <view class="card__bd">
+    <image src="{{image}}" style="width: 100%;" mode="aspectFill"></image>
+  </view>
+  <view class="card__ft">
+    <view class="content">
+    {{content}}
+    </view>
+    <view class="like">
+      <mp-icon wx:if="{{like}}" class="icon" color="#FF2D55" icon="like" type="field" size="{{25}}"></mp-icon>
+      <mp-icon wx:if="{{!like}}" class="icon" icon="like" size="{{25}}"></mp-icon>
+      <!-- <view class="number">{{likeNum}}</view> -->
+      <!-- <mp-icon class="icon" icon="comment" size="{{25}}"></mp-icon> -->
+      <!-- <view class="number">{{commentNum}}</view> -->
+    </view>
+  </view>
+</view>
+

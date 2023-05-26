@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="page__hd">
+    <view style="height: 10px;"></view>
+    <!-- <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar> -->
+  </view>
+  <view class="page__bd__10">
+    <scroll-view scroll-y style="width: 100%;height:100%;" type="custom">
+      <view class="story">
+        <view>
+          <mp-cell value="故事板" link url="" footer="更多">
+          </mp-cell>
+        </view>
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="image" mode="center"  src="../../image/ex2.png"></image>
+                </navigator>
+            </block>
+        </view>
+        <!-- <view style="height: 20px;"></view> -->
+        <view>
+          <mp-cell value="年度故事" link url="" footer="更多">
+          </mp-cell>
+        </view>
+        <view wx:for="{{yearGrids}}" wx:for-item="a" class="weui-grids">
+              <navigator url="" style="padding-left:16px;">{{a.year}}</navigator>
+              <navigator url="" class="weui-grid-1" hover-class="weui-grid_active">
+                  <image class="image" mode="center"  src="{{a.image}}"></image>
+              </navigator>
+        </view>
+      </view>
+      <view style="height: 10px;"></view>
+    </scroll-view>
+  </view>
+  <!-- 标签 -->
+</view>

@@ -1,9 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/time/time",
-    "pages/my/my",
-    "pages/show/show",
+    "pages/time/index",
+    "pages/my/index",
+    "pages/like/index",
     "pages/logs/logs"
   ],
   "lazyCodeLoading": "requiredComponents",
@@ -23,23 +23,28 @@
       {
         "pagePath": "pages/index/index",
         "iconPath": "image/IndexOff.png",
-        "selectedIconPath": "image/IndexOn.png"
+        "selectedIconPath": "image/IndexOn.png",
+        "text": "首页"
       }, {
-        "pagePath": "pages/time/time",
+        "pagePath": "pages/like/index",
         "iconPath": "image/LikeOff.png",
-        "selectedIconPath": "image/LikeOn.png"
+        "selectedIconPath": "image/LikeOn.png",
+        "text": "喜欢"
       }, {
-        "pagePath": "pages/show/show",
+        "pagePath": "pages/time/index",
         "iconPath": "image/MusicOff.png",
-        "selectedIconPath": "image/MusicOn.png"
+        "selectedIconPath": "image/MusicOn.png",
+        "text": "故事"
       }, {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/my/index",
         "iconPath": "image/MyOff.png",
-        "selectedIconPath": "image/MyOn.png"
+        "selectedIconPath": "image/MyOn.png",
+        "text": "我"
       }
     ]
   },
   "useExtendedLib": {
     "weui": true
-  }
+  },
+  "debug": true
 }

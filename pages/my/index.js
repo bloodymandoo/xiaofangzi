@@ -1,0 +1,48 @@
+
+Page({
+    onLoad: function(){
+      var userInfo = wx.getStorageSync('userInfo') || {
+        avatarUrl:'',
+        nickName:'小房子',
+        city:'我是一个可爱的小房子'
+      }
+      console.log(userInfo,'userInfo')
+        this.setData({
+          userinfo:userInfo,
+          list:[
+            {
+              title:'',
+              footer:'',
+              cells:[
+                {
+                  value:'纪念日',
+                  icon:'../../image/纪念日.png',
+                  url:''
+                },
+                {
+                  value:'大姨妈',
+                  icon:'../../image/大姨妈.png',
+                  url:''
+                },
+                {
+                  value:'二人世界',
+                  icon:'../../image/二人世界.png',
+                  url:''
+                }
+              ]
+            },
+            {
+              title:'',
+              footer:'',
+              cells:[
+                {
+                  value:'设置',
+                  icon:'../../image/设置.png',
+                  url:''
+                }
+              ]
+            }
+          ]
+        });
+    }
+});
