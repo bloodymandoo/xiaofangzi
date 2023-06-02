@@ -1,7 +1,6 @@
 //app.js
 App({
   onLaunch: function () {
-    console.log('aaa')
     wx.getSetting({
       success (res){
         if (res.authSetting['scope.userInfo']) {
